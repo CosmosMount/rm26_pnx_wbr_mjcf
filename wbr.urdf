@@ -1,0 +1,1495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="总.SLDASM">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.13450644299271 0.0505978477570613 0.66700677231481"
+        rpy="0 0 0" />
+      <mass
+        value="141.81706828605" />
+      <inertia
+        ixx="6.95783594611584"
+        ixy="-5.00544591497376E-06"
+        ixz="0.000302400453242941"
+        iyy="6.96938513835685"
+        iyz="4.93645186615708E-05"
+        izz="12.7265032354117" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.929411764705882 0.929411764705882 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="llink1">
+    <inertial>
+      <origin
+        xyz="-0.10059483991808 -0.00703470334777706 -0.00667387984806356"
+        rpy="0 0 0" />
+      <mass
+        value="0.326647250989072" />
+      <inertia
+        ixx="0.000153772964666726"
+        ixy="1.45314591248653E-06"
+        ixz="-0.000118775345641089"
+        iyy="0.00156849301028805"
+        iyz="-5.72104976698339E-07"
+        izz="0.00142256733625024" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint1"
+    type="revolute">
+    <origin
+      xyz="-7.22199607476809E-05 0.177599999999999 0.116"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="llink1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="35"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink1_child1">
+    <inertial>
+      <origin
+        xyz="0.111770860520247 0.017005163406814 -0.048523441241101"
+        rpy="0 0 0" />
+      <mass
+        value="0.239193401395539" />
+      <inertia
+        ixx="0.000423745373412392"
+        ixy="-4.11007552855578E-06"
+        ixz="0.000774454128037447"
+        iyy="0.002361790974738"
+        iyz="2.40306825191402E-06"
+        izz="0.00194366910360992" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1_child1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1_child1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink1childjoint1"
+    type="revolute">
+    <origin
+      xyz="-0.214234066507985 -0.00799999999999529 -0.0181318710411525"
+      rpy="0 0 0" />
+    <parent
+      link="llink1" />
+    <child
+      link="llink1_child1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink1site2">
+    <inertial>
+      <origin
+        xyz="0.258089728244167 -0.178567155005279 0.0521755771431085"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1site2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1site2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink1site2joint"
+    type="fixed">
+    <origin
+      xyz="-0.0436647995930429 0.0144999999999957 0.0411507627694995"
+      rpy="0 0 0" />
+    <parent
+      link="llink1_child1" />
+    <child
+      link="llink1site2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lwlink">
+    <inertial>
+      <origin
+        xyz="0.000129414405845157 -0.0156078436091745 1.51171240884776E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.248106367527013" />
+      <inertia
+        ixx="0.000215690172638327"
+        ixy="2.41591142926025E-07"
+        ixz="2.29413460445214E-08"
+        iyy="0.000387238893902345"
+        iyz="6.09646744745151E-09"
+        izz="0.000214910788053094" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lwlink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lwlink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lwheel"
+    type="revolute">
+    <origin
+      xyz="0.233281557591828 0.0549499999999987 -0.100477434718092"
+      rpy="0 0 0" />
+    <parent
+      link="llink1_child1" />
+    <child
+      link="lwlink" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="10"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink1site1">
+    <inertial>
+      <origin
+        xyz="0.0998346140072 -0.180067155005296 0.0836278972625069"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1site1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink1site1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink1site1joint"
+    type="fixed">
+    <origin
+      xyz="-0.0996437518640612 0.00800000000001688 -0.00843342839105141"
+      rpy="0 0 0" />
+    <parent
+      link="llink1" />
+    <child
+      link="llink1site1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lspringsite1">
+    <inertial>
+      <origin
+        xyz="0.0126146485799191 -0.161567155005283 0.121040946714067"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lspringsite1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lspringsite1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lspringsite1joint"
+    type="fixed">
+    <origin
+      xyz="-0.0124237864367803 -0.0104999999999957 -0.0458464778426118"
+      rpy="0 0 0" />
+    <parent
+      link="llink1" />
+    <child
+      link="lspringsite1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="llink4">
+    <inertial>
+      <origin
+        xyz="0.0360984917046302 -0.00653418943400538 0.00860623307350673"
+        rpy="0 0 0" />
+      <mass
+        value="0.0654345292469584" />
+      <inertia
+        ixx="1.64156901670552E-05"
+        ixy="-7.16702187875287E-06"
+        ixz="-1.60050814210132E-05"
+        iyy="9.07179495639498E-05"
+        iyz="-1.70868803097995E-06"
+        izz="7.97325801473728E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="ljoint4"
+    type="revolute">
+    <origin
+      xyz="-7.22199607476911E-05 0.190599999999999 0.116"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="llink4" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="35"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink4_child1">
+    <inertial>
+      <origin
+        xyz="-0.0442069989726003 -0.0154999999999977 -0.0391791544309648"
+        rpy="0 0 0" />
+      <mass
+        value="0.0343504460745115" />
+      <inertia
+        ixx="2.64920917137531E-05"
+        ixy="4.94668557380363E-20"
+        ixz="-2.83394391778753E-05"
+        iyy="5.92716258437009E-05"
+        iyz="4.21023022418213E-20"
+        izz="3.3352041564523E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink4child1joint"
+    type="revolute">
+    <origin
+      xyz="0.0972737233009702 0 0.0231910059110481"
+      rpy="0 0 0" />
+    <parent
+      link="llink4" />
+    <child
+      link="llink4_child1" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink4_child2">
+    <inertial>
+      <origin
+        xyz="-0.0710416598301191 0.0105000000000165 0.0341136211827791"
+        rpy="0 0 0" />
+      <mass
+        value="0.0581710112657768" />
+      <inertia
+        ixx="5.09282811791732E-05"
+        ixy="2.77699686159696E-19"
+        ixz="8.00176305829252E-05"
+        iyy="0.000208845880954938"
+        iyz="-1.40734785006713E-19"
+        izz="0.00015826662584336" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink4child2joint"
+    type="revolute">
+    <origin
+      xyz="-0.0884139979449759 -0.0155 -0.0783583088596399"
+      rpy="0 0 0" />
+    <parent
+      link="llink4_child1" />
+    <child
+      link="llink4_child2" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink4site1">
+    <inertial>
+      <origin
+        xyz="0.0998346140072 -0.180067155005296 0.0836278972625069"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4site1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4site1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink4site1joint"
+    type="fixed">
+    <origin
+      xyz="-0.108503477220056 0.0105000000000174 0.0467338745575403"
+      rpy="0 0 0" />
+    <parent
+      link="llink4_child2" />
+    <child
+      link="llink4site1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="llink4_child3">
+    <inertial>
+      <origin
+        xyz="-0.0572951573217983 -0.0135000000000145 -0.00484922132493799"
+        rpy="0 0 0" />
+      <mass
+        value="0.0356582479332101" />
+      <inertia
+        ixx="1.90638866149917E-06"
+        ixy="9.79083203881853E-20"
+        ixz="-4.7582407755404E-06"
+        iyy="5.90359476618428E-05"
+        iyz="9.62215048525756E-21"
+        izz="5.77238631325638E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4_child3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink4child3joint"
+    type="revolute">
+    <origin
+      xyz="-0.15216827681321 0.0135000000000174 0.087884637326773"
+      rpy="0 0 0" />
+    <parent
+      link="llink4_child2" />
+    <child
+      link="llink4_child3" />
+    <axis
+      xyz="0 -1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="llink4site2">
+    <inertial>
+      <origin
+        xyz="0.258089728244167 -0.178567155005279 0.0521755771431085"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4site2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/llink4site2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="llink4site2joint"
+    type="fixed">
+    <origin
+      xyz="-0.114590314643812 -0.00450000000001644 -0.00969844264983424"
+      rpy="0 0 0" />
+    <parent
+      link="llink4_child3" />
+    <child
+      link="llink4site2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="lspringsite2">
+    <inertial>
+      <origin
+        xyz="0.171208679119604 -0.181567155005281 0.11847302511035"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lspringsite2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/lspringsite2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="lspringsite2joint"
+    type="fixed">
+    <origin
+      xyz="-0.171017816976465 -0.00349999999999806 -0.0432785562388946"
+      rpy="0 0 0" />
+    <parent
+      link="llink4" />
+    <child
+      link="lspringsite2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rlink1">
+    <inertial>
+      <origin
+        xyz="-0.100594839918079 0.00703470334777673 -0.00667387984806365"
+        rpy="0 0 0" />
+      <mass
+        value="0.326647250989072" />
+      <inertia
+        ixx="0.000153772964666725"
+        ixy="-1.4531459124866E-06"
+        ixz="-0.000118775345641089"
+        iyy="0.00156849301028805"
+        iyz="5.72104976698368E-07"
+        izz="0.00142256733625023" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint1"
+    type="revolute">
+    <origin
+      xyz="-7.22199607480317E-05 -0.177599999999997 0.116"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rlink1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="35"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink1_child1">
+    <inertial>
+      <origin
+        xyz="0.111770860520246 0.00849483659318262 -0.0485234412410673"
+        rpy="0 0 0" />
+      <mass
+        value="0.239193401395539" />
+      <inertia
+        ixx="0.000423745373412396"
+        ixy="4.11007552855612E-06"
+        ixz="0.000774454128037451"
+        iyy="0.00236179097473801"
+        iyz="-2.40306825191415E-06"
+        izz="0.00194366910360993" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_child1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_child1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rchild1joint"
+    type="revolute">
+    <origin
+      xyz="-0.214234066507984 -0.0175000000000018 -0.0181318710411864"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1" />
+    <child
+      link="rlink1_child1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink1_site2">
+    <inertial>
+      <origin
+        xyz="0.0998346140073152 0.175632844994733 0.083627897262702"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_site2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_site2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink1_site2"
+    type="fixed">
+    <origin
+      xyz="0.114590314643807 0.0249999999999864 0.0096984426499398"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1_child1" />
+    <child
+      link="rlink1_site2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rwlink">
+    <inertial>
+      <origin
+        xyz="0.000129414247360911 0.0156078445135212 1.51172075023437E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.248106347100355" />
+      <inertia
+        ixx="0.00021569016746374"
+        ixy="-2.41590192529257E-07"
+        ixz="2.29430070234285E-08"
+        iyy="0.000387238888955392"
+        iyz="-6.09841535393914E-09"
+        izz="0.000214910785898752" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rwlink.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rwlink.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rwheel"
+    type="revolute">
+    <origin
+      xyz="0.233281557591239 -0.0294500000000002 -0.100477434719469"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1_child1" />
+    <child
+      link="rwlink" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="15"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink1_site1">
+    <inertial>
+      <origin
+        xyz="0.0998346140073152 0.175632844994733 0.083627897262702"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_site1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink1_site1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink1_site1"
+    type="fixed">
+    <origin
+      xyz="-0.0996437518641761 0.00749999999998457 -0.00843342839124656"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1" />
+    <child
+      link="rlink1_site1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rspringsite1">
+    <inertial>
+      <origin
+        xyz="0.0126146485799188 0.172632844994722 0.121040946714067"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rspringsite1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rspringsite1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rspringsite1joint"
+    type="fixed">
+    <origin
+      xyz="-0.0124237864367797 0.0104999999999953 -0.0458464778426119"
+      rpy="0 0 0" />
+    <parent
+      link="rlink1" />
+    <child
+      link="rspringsite1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rlink4">
+    <inertial>
+      <origin
+        xyz="0.0360984917046309 0.00653418943400522 0.00860623307350669"
+        rpy="0 0 0" />
+      <mass
+        value="0.0654345292469583" />
+      <inertia
+        ixx="1.64156901670558E-05"
+        ixy="7.16702187875297E-06"
+        ixz="-1.60050814210132E-05"
+        iyy="9.07179495639498E-05"
+        iyz="1.70868803097996E-06"
+        izz="7.97325801473735E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rjoint4"
+    type="revolute">
+    <origin
+      xyz="-7.22199607480242E-05 -0.190599999999997 0.116"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="rlink4" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="35"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink4_child1">
+    <inertial>
+      <origin
+        xyz="-0.0442069989728948 -0.00349999999998918 -0.0391791544297322"
+        rpy="0 0 0" />
+      <mass
+        value="0.0343504460745115" />
+      <inertia
+        ixx="2.6492091713753E-05"
+        ixy="-5.41718976590668E-20"
+        ixz="-2.83394391778752E-05"
+        iyy="5.92716258437007E-05"
+        iyz="-4.78694202267935E-20"
+        izz="3.33520415645229E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink4child1joint"
+    type="revolute">
+    <origin
+      xyz="0.097273723301265 0.0189999999999871 0.0231910059098156"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4" />
+    <child
+      link="rlink4_child1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink4_child2">
+    <inertial>
+      <origin
+        xyz="-0.0710416598297668 -2.77555756156289E-17 0.0341136211835116"
+        rpy="0 0 0" />
+      <mass
+        value="0.0581710112657768" />
+      <inertia
+        ixx="5.09282811791732E-05"
+        ixy="-2.52245497270889E-19"
+        ixz="8.00176305829252E-05"
+        iyy="0.000208845880954938"
+        iyz="1.26775832145799E-19"
+        izz="0.00015826662584336" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink4child2joint"
+    type="revolute">
+    <origin
+      xyz="-0.0884139979456228 -0.0140000000000033 -0.0783583088591401"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4_child1" />
+    <child
+      link="rlink4_child2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink4_site1">
+    <inertial>
+      <origin
+        xyz="0.099834614007289 0.191132844994733 0.0836278972626606"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_site1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_site1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink4_site1"
+    type="fixed">
+    <origin
+      xyz="-0.108503477219792 0 0.0467338745581192"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4_child2" />
+    <child
+      link="rlink4_site1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rlink4_child3">
+    <inertial>
+      <origin
+        xyz="-0.0572951573218714 -2.77555756156289E-16 -0.00484922132493859"
+        rpy="0 0 0" />
+      <mass
+        value="0.0356582479332101" />
+      <inertia
+        ixx="1.90638866149911E-06"
+        ixy="-8.46115049645405E-20"
+        ixz="-4.75824077554038E-06"
+        iyy="5.90359476618427E-05"
+        iyz="-8.64393173675774E-21"
+        izz="5.77238631325637E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_child3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink4child3joint"
+    type="revolute">
+    <origin
+      xyz="-0.152168276812785 0.010500000000014 0.087884637327506"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4_child2" />
+    <child
+      link="rlink4_child3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="3.1416" />
+  </joint>
+  <link
+    name="rlink4_site2">
+    <inertial>
+      <origin
+        xyz="0.258089728244085 0.180632844994719 0.0521755771432132"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_site2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rlink4_site2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rlink4_site2"
+    type="fixed">
+    <origin
+      xyz="-0.114590314643803 0 -0.0096984426499394"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4_child3" />
+    <child
+      link="rlink4_site2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="rspringsite2">
+    <inertial>
+      <origin
+        xyz="0.171208679119604 0.192632844994719 0.11847302511035"
+        rpy="0 0 0" />
+      <mass
+        value="20.187180035456" />
+      <inertia
+        ixx="0.640058456820628"
+        ixy="0.0206088644134153"
+        ixz="-0.0697036663998038"
+        iyy="0.643910069938766"
+        iyz="-0.0302567314256989"
+        izz="0.5464246159623" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rspringsite2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://总.SLDASM/meshes/rspringsite2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="rspringsite2joint"
+    type="fixed">
+    <origin
+      xyz="-0.17102 0.0035 -0.043279"
+      rpy="0 0 0" />
+    <parent
+      link="rlink4" />
+    <child
+      link="rspringsite2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
