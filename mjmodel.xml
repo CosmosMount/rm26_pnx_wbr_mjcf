@@ -200,6 +200,13 @@
     <general name="right_gas_spring_actuator" tendon="right_gas_spring"
       gaintype="fixed" gainprm="0" biastype="affine" biasprm="34 1800 -4"
       forcelimited="true" forcerange="250 385"/>
+    <!-- F(L) = 450 + 1800*(L - 0.120) N, with damping -4*Ldot. -->
+    <!-- <general name="left_gas_spring_actuator" tendon="left_gas_spring"
+      gaintype="fixed" gainprm="0" biastype="affine" biasprm="234 1800 -4"
+      forcelimited="true" forcerange="450 585"/> -->
+    <!-- <general name="right_gas_spring_actuator" tendon="right_gas_spring"
+      gaintype="fixed" gainprm="0" biastype="affine" biasprm="234 1800 -4"
+      forcelimited="true" forcerange="450 585"/> -->
   </actuator>
 
   <keyframe>
